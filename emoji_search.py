@@ -41,9 +41,10 @@ def search(emoji_list, emoji_dict):
         elif "*" in search:
             wild= random.randint(0,len(emoji_dict)-1)
             print(emoji_list[wild])
-        for key in emoji_dict:
-            if search in key:
-                print(emoji_dict[key])
+        else:
+            for key in emoji_dict:
+                if search in key:
+                    print(emoji_dict[key])
                 
 def main():
     try:
