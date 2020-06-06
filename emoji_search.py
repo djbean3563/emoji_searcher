@@ -44,7 +44,8 @@ def search(emoji_list, emoji_dict):
         else:
             for key in emoji_dict:
                 if search in key:
-                    print(emoji_dict[key])
+                    print(emoji_dict[key], end=" ")
+            print()
                 
 def main():
     try:
